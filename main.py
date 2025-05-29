@@ -1,7 +1,11 @@
+from dotenv import load_dotenv
 import lyricsgenius
 import os
 
-GENIUS_API_TOKEN = "2AIdvhRI7w2Qitj-atP6k3Lpzo0gUujzPzRKFnsggQVoW44EUf3VneAxDkEPKwHe"
+load_dotenv()
+
+
+GENIUS_API_TOKEN = os.getenv("GENIUS_API_TOKEN")
 
 
 #fetch lyrics
